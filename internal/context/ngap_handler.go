@@ -73,6 +73,14 @@ func HandlePDUSessionResourceSetupResponseTransfer(b []byte, ctx *SMContext) err
 		DCGTPTunnel = DCQosFlowPerTNLInformationItem.QosFlowPerTNLInformation.UPTransportLayerInformation.GTPTunnel
 	}
 
+	ctx.Log.Infof(
+		"NGAP setup response DL TNL from gNB: ranAddr=%v ranTeid=%d pduSessionId=%d localUlTeid=%d",
+		GTPTunnel.TransportLayerAddress.Value.Bytes,
+		binary.BigEndian.Uint32(GTPTunnel.GTPTEID.Value),
+		ctx.PDUSessionID,
+		ctx.LocalULTeid,
+	)
+
 	ctx.Tunnel.UpdateANInformation(
 		GTPTunnel.TransportLayerAddress.Value.Bytes,
 		binary.BigEndian.Uint32(GTPTunnel.GTPTEID.Value))

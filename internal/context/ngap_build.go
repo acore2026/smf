@@ -21,6 +21,15 @@ func BuildPDUSessionResourceSetupRequestTransfer(ctx *SMContext) ([]byte, error)
 	binary.BigEndian.PutUint32(teidOct, ctx.LocalULTeid)
 	binary.BigEndian.PutUint32(teidOctForSplitPDUSession, ctx.LocalULTeidForSplitPDUSession)
 
+	ctx.Log.Infof(
+		"NGAP setup request UL TNL: anUpf=%s upfNode=%s ulTeid=%d ulSplitTeid=%d pduSessionId=%d",
+		UpNode.NodeID.ResolveNodeIdToIp().String(),
+		UpNode.NodeID.ResolveNodeIdToIp().String(),
+		ctx.LocalULTeid,
+		ctx.LocalULTeidForSplitPDUSession,
+		ctx.PDUSessionID,
+	)
+
 	resourceSetupRequestTransfer := ngapType.PDUSessionResourceSetupRequestTransfer{}
 
 	// PDU Session Aggregate Maximum Bit Rate

@@ -366,6 +366,14 @@ func NewSMContext(id string, pduSessID int32) *SMContext {
 		return nil
 	}
 
+	smContext.Log.Infof(
+		"Allocated local TEIDs: ul=%d dl=%d ulSplit=%d dlSplit=%d",
+		smContext.LocalULTeid,
+		smContext.LocalDLTeid,
+		smContext.LocalULTeidForSplitPDUSession,
+		smContext.LocalDLTeidForSplitPDUSession,
+	)
+
 	smContext.NrdcIndicator = false
 
 	return smContext
@@ -679,7 +687,14 @@ func (c *SMContext) CreatePccRuleDataPath(pccRule *PCCRule,
 		},
 		Dnai: targetRoute.Dnai,
 	}
-	createdUpPath := GetUserPlaneInformation().GetDefaultUserPlanePathByDNN(param)
+	upi := GetUserPlaneInformation()
+	var createdUpPath UPPath
+	if c.SelectedUPF != nil {
+		createdUpPath = upi.GetDefaultUserPlanePathByDNNAndUPF(param, c.SelectedUPF)
+	}
+	if createdUpPath == nil {
+		createdUpPath = upi.GetDefaultUserPlanePathByDNN(param)
+	}
 	createdDataPath := GenerateDataPath(createdUpPath)
 	if createdDataPath == nil {
 		return fmt.Errorf("fail to create data path for pcc rule[%s]", pccRule.PccRuleId)
@@ -727,7 +742,14 @@ func (c *SMContext) CreateDcPccRuleDataPathOnDcTunnel(pccRule *PCCRule,
 		},
 		Dnai: targetRoute.Dnai,
 	}
-	createdUpPath := GetUserPlaneInformation().GetDefaultUserPlanePathByDNN(param)
+	upi := GetUserPlaneInformation()
+	var createdUpPath UPPath
+	if c.SelectedUPF != nil {
+		createdUpPath = upi.GetDefaultUserPlanePathByDNNAndUPF(param, c.SelectedUPF)
+	}
+	if createdUpPath == nil {
+		createdUpPath = upi.GetDefaultUserPlanePathByDNN(param)
+	}
 	createdDataPath := GenerateDataPath(createdUpPath)
 	if createdDataPath == nil {
 		return fmt.Errorf("fail to create data path on DCTunnel for pcc rule[%s]", pccRule.PccRuleId)

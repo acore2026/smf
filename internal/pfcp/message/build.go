@@ -1,7 +1,9 @@
 package message
 
 import (
+	"fmt"
 	"net"
+	"strings"
 	"time"
 
 	"github.com/free5gc/pfcp"
@@ -449,6 +451,19 @@ func BuildPfcpSessionEstablishmentRequest(
 	msg.PDNType = &pfcpType.PDNType{
 		PdnType: pfcpType.PDNTypeIpv4,
 	}
+
+	pdrSummaries := make([]string, 0, len(msg.CreatePDR))
+	for _, createPDR := range msg.CreatePDR {
+		teid := uint32(0)
+		if createPDR.PDI != nil && createPDR.PDI.LocalFTEID != nil {
+			teid = createPDR.PDI.LocalFTEID.Teid
+		}
+		pdrSummaries = append(pdrSummaries,
+			fmt.Sprintf("pdr=%d srcIf=%d teid=%d ue=%v", createPDR.PDRID.RuleId,
+				createPDR.PDI.SourceInterface.InterfaceValue, teid, createPDR.PDI.UEIPAddress))
+	}
+	smContext.Log.Infof("PFCP est request to %s localSEID=%d createPDRs=[%s]",
+		nodeIDtoIP, localSEID, strings.Join(pdrSummaries, ", "))
 
 	// for _, far := range msg.CreateFAR {
 	// 	printCreateFAR(far)
