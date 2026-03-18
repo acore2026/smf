@@ -1,4 +1,4 @@
-module github.com/free5gc/smf
+module github.com/acore2026/smf
 
 go 1.25.5
 
@@ -10,6 +10,7 @@ require (
 	github.com/free5gc/ngap v1.1.2
 	github.com/free5gc/openapi v1.2.3
 	github.com/free5gc/pfcp v1.1.1
+	github.com/free5gc/smf v1.4.2
 	github.com/free5gc/util v1.3.2-0.20260107090449-c09baaf75b11
 	github.com/gin-gonic/gin v1.10.0
 	github.com/google/uuid v1.6.0
@@ -60,7 +61,6 @@ require (
 	github.com/prometheus/client_model v0.6.1 // indirect
 	github.com/prometheus/common v0.62.0 // indirect
 	github.com/prometheus/procfs v0.15.1 // indirect
-	github.com/rogpeppe/go-internal v1.12.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/smarty/assertions v1.15.0 // indirect
 	github.com/tim-ywliu/nested-logrus-formatter v1.3.2 // indirect
