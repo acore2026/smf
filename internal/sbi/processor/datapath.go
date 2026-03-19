@@ -3,14 +3,14 @@ package processor
 import (
 	"fmt"
 
-	"github.com/free5gc/nas/nasMessage"
-	"github.com/free5gc/openapi/models"
-	"github.com/free5gc/pfcp"
-	"github.com/free5gc/pfcp/pfcpType"
-	"github.com/free5gc/pfcp/pfcpUdp"
-	smf_context "github.com/free5gc/smf/internal/context"
-	"github.com/free5gc/smf/internal/logger"
-	pfcp_message "github.com/free5gc/smf/internal/pfcp/message"
+	"github.com/acore2026/nas/nasMessage"
+	"github.com/acore2026/openapi/models"
+	"github.com/acore2026/pfcp"
+	"github.com/acore2026/pfcp/pfcpType"
+	"github.com/acore2026/pfcp/pfcpUdp"
+	smf_context "github.com/acore2026/smf/internal/context"
+	"github.com/acore2026/smf/internal/logger"
+	pfcp_message "github.com/acore2026/smf/internal/pfcp/message"
 )
 
 type PFCPState struct {

@@ -5,13 +5,13 @@ import (
 	"net"
 	"reflect"
 
-	"github.com/free5gc/openapi/models"
-	"github.com/free5gc/pfcp/pfcpType"
-	"github.com/free5gc/pfcp/pfcpUdp"
-	"github.com/free5gc/smf/internal/context"
-	"github.com/free5gc/smf/internal/logger"
-	"github.com/free5gc/smf/pkg/factory"
-	"github.com/free5gc/util/flowdesc"
+	"github.com/acore2026/openapi/models"
+	"github.com/acore2026/pfcp/pfcpType"
+	"github.com/acore2026/pfcp/pfcpUdp"
+	"github.com/acore2026/smf/internal/context"
+	"github.com/acore2026/smf/internal/logger"
+	"github.com/acore2026/smf/pkg/factory"
+	"github.com/acore2026/util/flowdesc"
 )
 
 func (p *Processor) AddPDUSessionAnchorAndULCL(smContext *context.SMContext) error {

@@ -6,13 +6,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/free5gc/nas/nasConvert"
-	"github.com/free5gc/openapi"
-	"github.com/free5gc/openapi/chf/ConvergedCharging"
-	"github.com/free5gc/openapi/models"
-	smf_context "github.com/free5gc/smf/internal/context"
-	"github.com/free5gc/smf/internal/logger"
-	sbi_metrics "github.com/free5gc/util/metrics/sbi"
+	"github.com/acore2026/nas/nasConvert"
+	"github.com/acore2026/openapi"
+	"github.com/acore2026/openapi/chf/ConvergedCharging"
+	"github.com/acore2026/openapi/models"
+	smf_context "github.com/acore2026/smf/internal/context"
+	"github.com/acore2026/smf/internal/logger"
+	sbi_metrics "github.com/acore2026/util/metrics/sbi"
 )
 
 type nchfService struct {

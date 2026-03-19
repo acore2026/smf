@@ -12,12 +12,12 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/free5gc/smf/internal/logger"
-	"github.com/free5gc/smf/pkg/factory"
-	"github.com/free5gc/smf/pkg/service"
-	"github.com/free5gc/smf/pkg/utils"
-	logger_util "github.com/free5gc/util/logger"
-	"github.com/free5gc/util/version"
+	"github.com/acore2026/smf/internal/logger"
+	"github.com/acore2026/smf/pkg/factory"
+	"github.com/acore2026/smf/pkg/service"
+	"github.com/acore2026/smf/pkg/utils"
+	logger_util "github.com/acore2026/util/logger"
+	"github.com/acore2026/util/version"
 )
 
 var SMF *service.SmfApp

@@ -5,13 +5,13 @@ go 1.25.5
 require (
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d
 	github.com/davecgh/go-spew v1.1.1
-	github.com/free5gc/aper v1.1.0
-	github.com/free5gc/nas v1.2.2
-	github.com/free5gc/ngap v1.1.2
-	github.com/free5gc/openapi v1.2.3
-	github.com/free5gc/pfcp v1.1.1
-	github.com/free5gc/smf v1.4.2
-	github.com/free5gc/util v1.3.2-0.20260107090449-c09baaf75b11
+	github.com/acore2026/aper v1.1.1
+	github.com/acore2026/nas v1.2.3
+	github.com/acore2026/ngap v1.1.3
+	github.com/acore2026/openapi v1.2.4
+	github.com/acore2026/pfcp v1.1.2
+	github.com/acore2026/smf v1.4.2
+	github.com/acore2026/util v1.3.2-0.20260107090449-c09baaf75b11
 	github.com/gin-gonic/gin v1.10.0
 	github.com/google/uuid v1.6.0
 	github.com/h2non/gock v1.2.0
@@ -34,7 +34,7 @@ require (
 	github.com/cloudwego/iasm v0.2.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
-	github.com/free5gc/tlv v1.1.0 // indirect
+	github.com/acore2026/tlv v1.1.0 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.3 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/go-logr/logr v1.4.1 // indirect
@@ -80,4 +80,17 @@ require (
 	golang.org/x/text v0.31.0 // indirect
 	google.golang.org/protobuf v1.36.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
+)
+
+replace (
+	github.com/acore2026/openapi => /tmp/acore-repos/openapi
+	github.com/acore2026/util => /tmp/acore-repos/util
+	github.com/acore2026/aper => /tmp/acore-repos/aper
+	github.com/acore2026/nas => /tmp/acore-repos/nas
+	github.com/acore2026/ngap => /tmp/acore-repos/ngap
+	github.com/acore2026/pfcp => /tmp/acore-repos/pfcp
+	github.com/acore2026/ike => /tmp/acore-repos/ike
+	github.com/acore2026/sctp => /tmp/acore-repos/sctp
+	github.com/acore2026/go-gtp5gnl => /tmp/acore-repos/go-gtp5gnl
+	github.com/acore2026/chf => /tmp/acore-repos/chf
 )

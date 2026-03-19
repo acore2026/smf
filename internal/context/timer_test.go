@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/free5gc/smf/internal/context"
+	"github.com/acore2026/smf/internal/context"
 )
 
 func TestTimerNewTimer(t *testing.T) {

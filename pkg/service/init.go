@@ -10,17 +10,17 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/sirupsen/logrus"
 
-	"github.com/free5gc/openapi"
-	"github.com/free5gc/openapi/nrf/NFManagement"
-	smf_context "github.com/free5gc/smf/internal/context"
-	"github.com/free5gc/smf/internal/logger"
-	"github.com/free5gc/smf/internal/sbi"
-	"github.com/free5gc/smf/internal/sbi/consumer"
-	"github.com/free5gc/smf/internal/sbi/processor"
-	"github.com/free5gc/smf/pkg/app"
-	"github.com/free5gc/smf/pkg/factory"
-	"github.com/free5gc/util/metrics"
-	"github.com/free5gc/util/metrics/utils"
+	"github.com/acore2026/openapi"
+	"github.com/acore2026/openapi/nrf/NFManagement"
+	smf_context "github.com/acore2026/smf/internal/context"
+	"github.com/acore2026/smf/internal/logger"
+	"github.com/acore2026/smf/internal/sbi"
+	"github.com/acore2026/smf/internal/sbi/consumer"
+	"github.com/acore2026/smf/internal/sbi/processor"
+	"github.com/acore2026/smf/pkg/app"
+	"github.com/acore2026/smf/pkg/factory"
+	"github.com/acore2026/util/metrics"
+	"github.com/acore2026/util/metrics/utils"
 )
 
 type SmfAppInterface interface {

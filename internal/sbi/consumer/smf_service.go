@@ -4,11 +4,11 @@ import (
 	"context"
 	"sync"
 
-	"github.com/free5gc/openapi"
-	"github.com/free5gc/openapi/models"
-	"github.com/free5gc/openapi/smf/PDUSession"
-	"github.com/free5gc/smf/internal/logger"
-	sbi_metrics "github.com/free5gc/util/metrics/sbi"
+	"github.com/acore2026/openapi"
+	"github.com/acore2026/openapi/models"
+	"github.com/acore2026/openapi/smf/PDUSession"
+	"github.com/acore2026/smf/internal/logger"
+	sbi_metrics "github.com/acore2026/util/metrics/sbi"
 )
 
 type nsmfService struct {

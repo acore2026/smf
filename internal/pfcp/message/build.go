@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/free5gc/pfcp"
-	"github.com/free5gc/pfcp/pfcpType"
-	"github.com/free5gc/smf/internal/context"
-	"github.com/free5gc/smf/internal/pfcp/udp"
+	"github.com/acore2026/pfcp"
+	"github.com/acore2026/pfcp/pfcpType"
+	"github.com/acore2026/smf/internal/context"
+	"github.com/acore2026/smf/internal/pfcp/udp"
 )
 
 func BuildPfcpAssociationSetupRequest() (pfcp.PFCPAssociationSetupRequest, error) {

@@ -10,13 +10,13 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/free5gc/nas/nasConvert"
-	"github.com/free5gc/nas/nasType"
-	"github.com/free5gc/openapi/models"
-	"github.com/free5gc/openapi/pcf/SMPolicyControl"
-	smf_context "github.com/free5gc/smf/internal/context"
-	"github.com/free5gc/util/flowdesc"
-	sbi_metrics "github.com/free5gc/util/metrics/sbi"
+	"github.com/acore2026/nas/nasConvert"
+	"github.com/acore2026/nas/nasType"
+	"github.com/acore2026/openapi/models"
+	"github.com/acore2026/openapi/pcf/SMPolicyControl"
+	smf_context "github.com/acore2026/smf/internal/context"
+	"github.com/acore2026/util/flowdesc"
+	sbi_metrics "github.com/acore2026/util/metrics/sbi"
 )
 
 type npcfService struct {

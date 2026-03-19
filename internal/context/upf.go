@@ -12,13 +12,13 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/free5gc/nas/nasMessage"
-	"github.com/free5gc/openapi/models"
-	"github.com/free5gc/pfcp/pfcpType"
-	"github.com/free5gc/pfcp/pfcpUdp"
-	"github.com/free5gc/smf/internal/logger"
-	"github.com/free5gc/smf/pkg/factory"
-	"github.com/free5gc/util/idgenerator"
+	"github.com/acore2026/nas/nasMessage"
+	"github.com/acore2026/openapi/models"
+	"github.com/acore2026/pfcp/pfcpType"
+	"github.com/acore2026/pfcp/pfcpUdp"
+	"github.com/acore2026/smf/internal/logger"
+	"github.com/acore2026/smf/pkg/factory"
+	"github.com/acore2026/util/idgenerator"
 )
 
 var upfPool sync.Map

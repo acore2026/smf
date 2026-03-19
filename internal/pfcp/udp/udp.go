@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/free5gc/pfcp"
-	"github.com/free5gc/pfcp/pfcpUdp"
-	smf_context "github.com/free5gc/smf/internal/context"
-	"github.com/free5gc/smf/internal/logger"
+	"github.com/acore2026/pfcp"
+	"github.com/acore2026/pfcp/pfcpUdp"
+	smf_context "github.com/acore2026/smf/internal/context"
+	"github.com/acore2026/smf/internal/logger"
 )
 
 const MaxPfcpUdpDataSize = 1024

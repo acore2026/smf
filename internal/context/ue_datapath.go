@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/free5gc/smf/internal/logger"
-	"github.com/free5gc/smf/pkg/factory"
-	"github.com/free5gc/util/idgenerator"
+	"github.com/acore2026/smf/internal/logger"
+	"github.com/acore2026/smf/pkg/factory"
+	"github.com/acore2026/util/idgenerator"
 )
 
 type UEPreConfigPaths struct {

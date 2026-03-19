@@ -7,11 +7,11 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/free5gc/openapi/models"
-	"github.com/free5gc/pfcp/pfcpType"
-	"github.com/free5gc/smf/internal/logger"
-	"github.com/free5gc/smf/internal/util"
-	"github.com/free5gc/smf/pkg/factory"
+	"github.com/acore2026/openapi/models"
+	"github.com/acore2026/pfcp/pfcpType"
+	"github.com/acore2026/smf/internal/logger"
+	"github.com/acore2026/smf/internal/util"
+	"github.com/acore2026/smf/pkg/factory"
 )
 
 // Refer to TS 23.501 5.7.4

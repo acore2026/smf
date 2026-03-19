@@ -7,12 +7,12 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/free5gc/nas/nasType"
-	"github.com/free5gc/openapi/models"
-	smf_context "github.com/free5gc/smf/internal/context"
-	"github.com/free5gc/smf/internal/sbi/consumer"
-	"github.com/free5gc/smf/pkg/factory"
-	"github.com/free5gc/smf/pkg/service"
+	"github.com/acore2026/nas/nasType"
+	"github.com/acore2026/openapi/models"
+	smf_context "github.com/acore2026/smf/internal/context"
+	"github.com/acore2026/smf/internal/sbi/consumer"
+	"github.com/acore2026/smf/pkg/factory"
+	"github.com/acore2026/smf/pkg/service"
 )
 
 var testConfig = factory.Config{

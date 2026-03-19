@@ -7,11 +7,11 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/free5gc/openapi"
-	"github.com/free5gc/openapi/models"
-	"github.com/free5gc/smf/internal/logger"
-	"github.com/free5gc/util/metrics/sbi"
-	"github.com/free5gc/util/validator"
+	"github.com/acore2026/openapi"
+	"github.com/acore2026/openapi/models"
+	"github.com/acore2026/smf/internal/logger"
+	"github.com/acore2026/util/metrics/sbi"
+	"github.com/acore2026/util/validator"
 )
 
 func (s *Server) getPDUSessionRoutes() []Route {

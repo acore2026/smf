@@ -11,11 +11,11 @@ import (
 	"github.com/sirupsen/logrus"
 	. "github.com/smartystreets/goconvey/convey"
 
-	"github.com/free5gc/pfcp"
-	"github.com/free5gc/pfcp/pfcpType"
-	"github.com/free5gc/pfcp/pfcpUdp"
-	"github.com/free5gc/smf/internal/logger"
-	"github.com/free5gc/smf/internal/pfcp/handler"
+	"github.com/acore2026/pfcp"
+	"github.com/acore2026/pfcp/pfcpType"
+	"github.com/acore2026/pfcp/pfcpUdp"
+	"github.com/acore2026/smf/internal/logger"
+	"github.com/acore2026/smf/internal/pfcp/handler"
 )
 
 type LogCapture struct {

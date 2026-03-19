@@ -1,16 +1,16 @@
 package consumer
 
 import (
-	"github.com/free5gc/openapi/amf/Communication"
-	"github.com/free5gc/openapi/chf/ConvergedCharging"
-	"github.com/free5gc/openapi/nrf/NFDiscovery"
-	"github.com/free5gc/openapi/nrf/NFManagement"
-	"github.com/free5gc/openapi/pcf/SMPolicyControl"
-	"github.com/free5gc/openapi/smf/PDUSession"
-	"github.com/free5gc/openapi/udm/SubscriberDataManagement"
-	"github.com/free5gc/openapi/udm/UEContextManagement"
-	smf_context "github.com/free5gc/smf/internal/context"
-	"github.com/free5gc/smf/pkg/app"
+	"github.com/acore2026/openapi/amf/Communication"
+	"github.com/acore2026/openapi/chf/ConvergedCharging"
+	"github.com/acore2026/openapi/nrf/NFDiscovery"
+	"github.com/acore2026/openapi/nrf/NFManagement"
+	"github.com/acore2026/openapi/pcf/SMPolicyControl"
+	"github.com/acore2026/openapi/smf/PDUSession"
+	"github.com/acore2026/openapi/udm/SubscriberDataManagement"
+	"github.com/acore2026/openapi/udm/UEContextManagement"
+	smf_context "github.com/acore2026/smf/internal/context"
+	"github.com/acore2026/smf/pkg/app"
 )
 
 type Consumer struct {

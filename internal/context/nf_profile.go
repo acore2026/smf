@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/free5gc/openapi/models"
-	"github.com/free5gc/smf/pkg/factory"
+	"github.com/acore2026/openapi/models"
+	"github.com/acore2026/smf/pkg/factory"
 )
 
 type NFProfile struct {

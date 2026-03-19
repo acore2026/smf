@@ -5,11 +5,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/free5gc/aper"
-	"github.com/free5gc/ngap/ngapType"
-	"github.com/free5gc/openapi/models"
-	"github.com/free5gc/pfcp/pfcpType"
-	"github.com/free5gc/smf/internal/logger"
+	"github.com/acore2026/aper"
+	"github.com/acore2026/ngap/ngapType"
+	"github.com/acore2026/openapi/models"
+	"github.com/acore2026/pfcp/pfcpType"
+	"github.com/acore2026/smf/internal/logger"
 )
 
 func strNgapCause(cause *ngapType.Cause) string {

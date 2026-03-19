@@ -6,10 +6,10 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/free5gc/openapi/models"
-	"github.com/free5gc/smf/internal/context"
-	"github.com/free5gc/smf/pkg/factory"
-	"github.com/free5gc/util/metrics/sbi"
+	"github.com/acore2026/openapi/models"
+	"github.com/acore2026/smf/internal/context"
+	"github.com/acore2026/smf/pkg/factory"
+	"github.com/acore2026/util/metrics/sbi"
 )
 
 type PDUSessionInfo struct {

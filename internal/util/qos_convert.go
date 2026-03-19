@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/free5gc/ngap/ngapType"
-	"github.com/free5gc/smf/internal/logger"
+	"github.com/acore2026/ngap/ngapType"
+	"github.com/acore2026/smf/internal/logger"
 )
 
 func BitRateTokbps(bitrate string) (uint64, error) {

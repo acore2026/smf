@@ -1,11 +1,11 @@
 package context
 
 import (
-	"github.com/free5gc/aper"
-	"github.com/free5gc/nas/nasType"
-	"github.com/free5gc/ngap/ngapType"
-	"github.com/free5gc/openapi/models"
-	"github.com/free5gc/smf/internal/util"
+	"github.com/acore2026/aper"
+	"github.com/acore2026/nas/nasType"
+	"github.com/acore2026/ngap/ngapType"
+	"github.com/acore2026/openapi/models"
+	"github.com/acore2026/smf/internal/util"
 )
 
 // QoSFlow  - Policy and Charging Rule

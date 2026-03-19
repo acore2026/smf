@@ -7,8 +7,8 @@ import (
 	"net"
 	"sort"
 
-	"github.com/free5gc/smf/internal/logger"
-	"github.com/free5gc/smf/pkg/factory"
+	"github.com/acore2026/smf/internal/logger"
+	"github.com/acore2026/smf/pkg/factory"
 )
 
 type UEDefaultPaths struct {

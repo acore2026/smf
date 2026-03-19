@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/free5gc/openapi/amf/Communication"
-	"github.com/free5gc/openapi/models"
-	sbi_metrics "github.com/free5gc/util/metrics/sbi"
+	"github.com/acore2026/openapi/amf/Communication"
+	"github.com/acore2026/openapi/models"
+	sbi_metrics "github.com/acore2026/util/metrics/sbi"
 )
 
 type namfService struct {

@@ -1,10 +1,10 @@
 package context
 
 import (
-	"github.com/free5gc/openapi/models"
-	"github.com/free5gc/pfcp"
-	"github.com/free5gc/pfcp/pfcpType"
-	"github.com/free5gc/smf/internal/logger"
+	"github.com/acore2026/openapi/models"
+	"github.com/acore2026/pfcp"
+	"github.com/acore2026/pfcp/pfcpType"
+	"github.com/acore2026/smf/internal/logger"
 )
 
 func (smContext *SMContext) HandleReports(

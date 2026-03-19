@@ -5,9 +5,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	smf_context "github.com/free5gc/smf/internal/context"
-	"github.com/free5gc/smf/pkg/factory"
-	"github.com/free5gc/util/metrics/sbi"
+	smf_context "github.com/acore2026/smf/internal/context"
+	"github.com/acore2026/smf/pkg/factory"
+	"github.com/acore2026/util/metrics/sbi"
 )
 
 func (s *Server) getUPIRoutes() []Route {
