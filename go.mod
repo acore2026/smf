@@ -8,8 +8,7 @@ require (
 	github.com/acore2026/ngap v1.1.3
 	github.com/acore2026/openapi v1.2.4
 	github.com/acore2026/pfcp v1.1.2
-	github.com/acore2026/smf v1.4.2
-	github.com/acore2026/util v1.3.2-0.20260107090449-c09baaf75b11
+	github.com/acore2026/util v1.3.2
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d
 	github.com/davecgh/go-spew v1.1.1
 	github.com/gin-gonic/gin v1.10.0
@@ -26,7 +25,7 @@ require (
 )
 
 require (
-	github.com/acore2026/tlv v1.1.0 // indirect
+	github.com/acore2026/tlv v1.1.1 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bytedance/sonic v1.11.6 // indirect
 	github.com/bytedance/sonic/loader v0.1.1 // indirect
